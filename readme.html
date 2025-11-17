@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>About | Capital Harvest</title>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: #f8f9fa;
+}
+
+/* Header */
+header {
+    background: #0ea5a2;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+}
+header img {
+    height: 45px;
+    margin-right: 20px;
+}
+header a {
+    color: white;
+    text-decoration: none;
+    margin-right: 18px;
+    font-weight: bold;
+}
+header a:hover {
+    text-decoration: underline;
+}
+
+/* Main Container */
+.container {
+    width: 900px;
+    max-width: 95%;
+    background: white;
+    margin: 30px auto;
+    padding: 25px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+/* Images */
+.main-img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+.grid-img {
+    width: 32%;
+    border-radius: 8px;
+}
+
+/* Text Styling */
+h1 { margin-bottom: 5px; }
+p { line-height: 1.6; font-size: 15px; color: #333; }
+h2 { margin-top: 20px; color: #0ea5a2; }
+
+/* Button */
+.btn {
+    display: inline-block;
+    background: #0ea5a2;
+    color: white;
+    padding: 12px 20px;
+    margin-top: 20px;
+    border-radius: 6px;
+    text-align: center;
+    font-size: 16px;
+    text-decoration: none;
+    font-weight: bold;
+}
+.btn:hover {
+    background: #0c8f8a;
+}
+
+/* Image Grid */
+.image-row {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <img src="logo.png" alt="Logo">
+    <a href="index.html">Home</a>
+    <a href="portfolio.html">Portfolio</a>
+    <a href="about.html">About</a>
+</header>
+
+<div class="container">
+
+    <img class="main-img" src="https://images.unsplash.com/photo-1553729459-efe14ef6055d" alt="Finance Image">
+
+    <h1>About Capital Harvest</h1>
+    <p>
+        Capital Harvest is a learning-focused investment simulation platform created to
+        practice front-end development and understand basic financial interfaces.
+    </p>
+
+    <h2>Our Goal</h2>
+    <p>
+        To make finance concepts like stocks, mutual funds, and returns easier to understand
+        for beginners. This website presents a simplified view of investment data.
+    </p>
+
+    <h2>Our Visual Insights</h2>
+    <div class="image-row">
+        <img class="grid-img" src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0" alt="Teamwork">
+        <img class="grid-img" src="https://images.unsplash.com/photo-1569025690938-a00729c9e1f9" alt="Growth Chart">
+        <img class="grid-img" src="https://images.unsplash.com/photo-1520607162513-77705c0f0d4a" alt="Investment Analysis">
+    </div>
+
+    <h2>Educational Purpose</h2>
+    <p>
+        All data shown is sample information created only for academic and project purposes.
+        This is not a financial service or investment advisor.
+    </p>
+
+    <a href="2page.html" class="btn">See Your Investment</a>
+
+</div>
+
+</body>
+</html>
