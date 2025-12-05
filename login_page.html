@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | Portfolio</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background: linear-gradient(135deg, #0ea5a2, #6de5dd);
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .box {
+            width: 350px;
+            background: #ffffffdd;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+            animation: fadeIn 0.6s ease-in-out;
+            backdrop-filter: blur(4px);
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(25px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        h2 {
+            text-align: center;
+            color: #0b4f4c;
+            margin-top: 0;
+        }
+
+        .input-group {
+            margin-bottom: 18px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 6px;
+            color: #0b4f4c;
+            font-size: 14px;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #bbb;
+            border-radius: 6px;
+            outline: none;
+        }
+
+        input:focus {
+            border-color: #0ea5a2;
+        }
+
+        .btn {
+            width: 100%;
+            padding: 12px;
+            border: none;
+            background: #0ea5a2;
+            color: white;
+            font-size: 16px;
+            border-radius: 6px;
+            cursor: pointer;
+            margin-top: 5px;
+        }
+
+        .btn:hover {
+            background: #0c8f8a;
+        }
+
+        .msg {
+            margin-top: 15px;
+            display: none;
+            padding: 12px;
+            background: #dff6f1;
+            border-left: 4px solid #0ea5a2;
+        }
+
+        .signup-link {
+            margin-top: 15px;
+            text-align: center;
+            font-size: 14px;
+        }
+
+        .signup-link a {
+            color: #0ea5a2;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .signup-link a:hover {
+            text-decoration: underline;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="box">
+        <h2>Welcome Back</h2>
+
+        <div class="input-group">
+            <label>Email</label>
+            <input type="email" id="email" placeholder="Enter your email">
+        </div>
+
+        <div class="input-group">
+            <label>Password</label>
+            <input type="password" id="pass" placeholder="Enter your password">
+        </div>
+
+        <a href="readme.html"><button class="btn" id="loginBtn">Login</button></a>
+
+        <div class="msg" id="infoBox">Logging you in...</div>
+
+        <div class="signup-link">
+            New here? <a href="#">Create Account</a>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById("loginBtn").addEventListener("click", function() {
+            let msg = document.getElementById("infoBox");
+            msg.style.display = "block";
+
+            setTimeout(() => {
+                window.location.href = "home.html";
+            }, 1000);
+        });
+    </script>
+</body>
+</html>
